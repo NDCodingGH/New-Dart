@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,500;0,800;1,800&display=swap');
+@font-face {
+    font-family: 'Edo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Edo'), url('/fonts/edo.woff') format('woff');
+    }
+
+
+body{
+    background-color: black;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Anybody', sans-serif;
+}
+
+#header-img{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    object-position: 50% 40%;
+    opacity: 30%;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    z-index: -1;
+}
+
+#header-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+#header-texto h1{
+    mix-blend-mode: difference;
+
+}
+
+#header-texto h3{
+    font-family: 'Edo', sans-serif;
+    font-size: 50px;
+    mix-blend-mode: difference;    
+    border-radius: 10%;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+ /*   background: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(47, 15, 168,0.02)
+    ); */
+    padding: 5px;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: right;
+    background: linear-gradient(
+        to right,rgba(47, 15, 168,0),
+        rgba(0,0,0,0.2)
+    );
+}
+
+.navbar ul li{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar ul li a:hover{
+    transition: 150ms;
+    background-color: rgba(47, 15, 168,0.3);
+    border-radius: 10%;
+}
+
+#nd-logo{
+    height: 70px;
+    width: 70px;
+}
+
+
+.geral{
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 0px;
+    border-style: outset;
+    border-color: rgba(255, 255, 255, 0.08);
+    border-right: rgba(0,0,0,0);
+    border-left: rgba(0,0,0,0);
+    padding-top: 10px;
+    border-radius: 2%;    
+}
+
+.geral h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 1px;
+    border-style: outset;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-right: rgba(0,0,0,0);
+    border-left: rgba(0,0,0,0);
+    border-bottom: rgba(0,0,0,0);
+    border-radius: 2%;    
+}
+
+.geral p{
+    font-weight: 0,500;
+    
+}
+
+#sobre{
+
+}
+
+#sobre-elements img{
+    height: 400px;
+
+}
+
+#sobre-elements{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sobre-p{
+   /* border: 1px;
+    border-style: outset;
+    border-color: white;
+    border-radius: 5% 15%; */
+   
+    font-size: 15px;
+    margin-left: 100px;
+    overflow-wrap: normal;
+    display: flex;
+    align-items: center;
+}
+
+#sobre-p p{
+    margin: 10px;
+
+}
