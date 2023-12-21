@@ -75,10 +75,10 @@ header{
 .navbar ul{
     display: flex !important;
     justify-content: right !important;
-    background: linear-gradient(
+ /*    background: linear-gradient(
         to right,rgba(47, 15, 168,0),
         rgba(0,0,0,0.2)
-    );
+    ); */
 }
 
 .navbar ul li{
@@ -105,12 +105,64 @@ nav{
     padding: 5px;
 }
 
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 31px;
+    height: 21px;
+}
 
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 650px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        background-color: rgba(46, 4, 130, 0.1);
+        width: 100%;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+}
 
 #nd-logo{
     height: 70px;
     width: 70px;
 }
+
 
 
 .geral{
