@@ -27,6 +27,7 @@
 
 body{
     background-color: var(--bgc);
+    overflow-x: hidden;
 }
 
 *{
@@ -89,7 +90,7 @@ header{
     justify-content: center;
     align-items: center;
     
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
@@ -97,8 +98,7 @@ header{
 #header-texto h3{
     display: flex;
     justify-content: center;
-    font-family: 'Edo', sans-serif;
-    mix-blend-mode: difference;    
+    font-family: 'Edo', sans-serif;  
     border-radius: 10%;
 }
 .navbar ul{
@@ -516,7 +516,7 @@ footer ul li:hover{
         width: 40em;
         margin: 2em;
         flex-wrap: wrap;
-        font-size: 16px;
+        font-size: 15px;
         text-align: justify;
         text-justify: inter-word;
     }
