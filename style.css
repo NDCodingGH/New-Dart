@@ -34,7 +34,6 @@ body{
     padding: 0;
     color: var(--fontc-main);
     font-family: 'Marmelad', sans-serif;
-    overflow-x: hidden;
 }
 
 .geral{
