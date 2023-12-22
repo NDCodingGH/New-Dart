@@ -88,7 +88,8 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    
+    font-size: 40px;
 }
 
 
@@ -96,7 +97,8 @@ header{
 #header-texto h3{
     display: flex;
     justify-content: center;
-    font-family: 'Edo', sans-serif;   
+    font-family: 'Edo', sans-serif;
+    mix-blend-mode: difference;    
     border-radius: 10%;
 }
 .navbar ul{
@@ -193,7 +195,7 @@ nav{
 
 
 #sobre-p{
-    width: 22em;
+    width: 24em;
     font-size: 18px;
     overflow-wrap: normal;
     display: flex;
@@ -514,7 +516,7 @@ footer ul li:hover{
         width: 40em;
         margin: 2em;
         flex-wrap: wrap;
-        font-size: 15px;
+        font-size: 16px;
         text-align: justify;
         text-justify: inter-word;
     }
