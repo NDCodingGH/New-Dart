@@ -93,7 +93,10 @@ header{
     font-size: 30px;
 }
 
-
+#header-texto h1{
+    font-family: 'Edo', 'Montserrat', sans-serif;
+    font-size: 55px;
+}
 
 #header-texto h3{
     display: flex;
@@ -144,7 +147,7 @@ nav{
 }
 
 #capa{
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 .toggle-button{
@@ -193,7 +196,7 @@ nav{
 
 
 #sobre-p{
-    max-width: fit-content;
+    max-width: max-content;
     width: 23em;
     font-size: 18px;
     overflow-wrap: normal;
@@ -355,6 +358,11 @@ nav{
     opacity: 100%;
 }
 
+#contactos{
+    display: flex;
+    flex-direction: column;
+}
+
 .contactos-input{
     width: 500px;
     height: 30px;
@@ -489,7 +497,7 @@ footer ul li:hover{
 
     .navbar-links.active{
         display: flex;
-        margin-bottom: 250px;
+        margin-bottom: 200px;
     }
 
     .navbar-links.active a{
@@ -526,8 +534,8 @@ footer ul li:hover{
         margin: 3em; /* retirei -top da propriedade margin e pus 3em ao inves de 2em */
         flex-wrap: wrap;
         font-size: 15px;
-       /* text-align: justify;
-        text-justify: distribute; */
+        text-align: justify;
+        text-justify: distribute-all-lines;
     }
 
     .ultimosl-sqr img{
@@ -548,7 +556,7 @@ footer ul li:hover{
     }
 
     .obras-sqr img{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 }
