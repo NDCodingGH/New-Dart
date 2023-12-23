@@ -527,7 +527,7 @@ footer ul li:hover{
         flex-wrap: wrap;
         font-size: 15px;
         text-align: justify;
-        text-justify: newspaper;
+        text-justify: distribute;
     }
 
     .ultimosl-sqr img{
