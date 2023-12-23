@@ -526,8 +526,8 @@ footer ul li:hover{
         margin: 3em; /* retirei -top da propriedade margin e pus 3em ao inves de 2em */
         flex-wrap: wrap;
         font-size: 15px;
-        text-align: justify;
-        text-justify: distribute;
+       /* text-align: justify;
+        text-justify: distribute; */
     }
 
     .ultimosl-sqr img{
