@@ -513,7 +513,7 @@ footer ul li:hover{
     #sobre-elements p{
         align-items: center;
         margin-left: 0px;
-        width: 40em;
+        width: 35em; /* 40px */
         margin: 3em; /* retirei -top da propriedade margin e pus 3em ao inves de 2em */
         flex-wrap: wrap;
         font-size: 15px;
