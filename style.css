@@ -516,6 +516,8 @@ footer ul li:hover{
     #sobre-elements p{
         align-items: center;
         margin-left: 0px;
+        width: auto; /* chatgpt */
+        max-width: 90%; /* chatgpt */
        /* display: inline-block;  Add */
         margin: 3em; /* retirei -top da propriedade margin e pus 3em ao inves de 2em */
         flex-wrap: wrap;
