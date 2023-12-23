@@ -180,8 +180,13 @@ nav{
 }
 
 
+#sobre{
+    background-color: black;
+}
 
-
+#contactos{
+    background-color: black;
+}
 
 #sobre-elements img{
     height: 400px;
