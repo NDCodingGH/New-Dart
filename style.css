@@ -525,7 +525,8 @@ footer ul li:hover{
     }
 
     .ultimosl-sqr img{
-        max-width: 75%;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
         opacity: 90%;
     }
