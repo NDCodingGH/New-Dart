@@ -522,8 +522,8 @@ footer ul li:hover{
     }
 
     .ultimosl-sqr img{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
         opacity: 90%;
     }
@@ -539,7 +539,7 @@ footer ul li:hover{
     }
 
     .obras-sqr img{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 }
