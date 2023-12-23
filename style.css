@@ -202,13 +202,13 @@ nav{
 
 
 #sobre-p{
-    width: 24em;
+    max-width: 100%; /* Adjust the width responsively */
+    width: auto; /* Ensures the width adjusts according to the content */
     font-size: 18px;
     overflow-wrap: normal;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: black;
    
 }
 
