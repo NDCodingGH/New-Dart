@@ -459,6 +459,11 @@ footer ul li:hover{
 }
 
 @media (max-width: 961px) {
+
+    .geral {
+        max-width: 100%;
+    }
+
     .toggle-button {
         display: flex;
     }
