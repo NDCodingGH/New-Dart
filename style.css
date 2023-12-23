@@ -230,7 +230,7 @@ nav{
 }
 
 .ultimosl-sqr{
-    padding: 1.3rem;
+    padding: 1rem; /* TBD */
     padding-bottom: 0.1rem;
     background-color: var(--bgc-song-cards);
     margin-bottom: 1.5rem;
