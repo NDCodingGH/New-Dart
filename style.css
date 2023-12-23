@@ -12,7 +12,7 @@
 
 
 :root{                                                              /*VARIÁVEIS*/
-    --bgc: rgb(7, 7, 7); /*BG Color Geral */
+    --bgc: #070707; /*BG Color Geral */
     --fontc-main: white; /*Font Color Geral*/
     --bgc-song-cards: white; /*BG Color Song Cards */
     --fontc-song-cards: rgb(7, 7, 7); /*Font Color Song Cards */
@@ -465,6 +465,10 @@ footer ul li:hover{
     transition: 80ms;
     background-color: #b8b0fd;
     border-radius: 5%;
+}
+
+#contactos-form-mailerlite{
+    margin: 50px 0 50px 0;
 }
 
 @media (max-width: 961px) {
