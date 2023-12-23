@@ -35,7 +35,6 @@ body{
     padding: 0;
     color: var(--fontc-main);
     font-family: 'Marmelad', sans-serif;
-    background-color: rgb(73, 56, 59);
 }
 
 .geral{
@@ -83,7 +82,6 @@ header{
     align-items: center;
     padding: 85px;
     z-index: -1;
-    background-color: black;
 }
 
 #header-texto{
@@ -180,14 +178,6 @@ nav{
     width: 70px;
 }
 
-
-#sobre{
-    background-color: black;
-}
-
-#contactos{
-    background-color: black;
-}
 
 #sobre-elements img{
     height: 400px;
