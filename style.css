@@ -517,7 +517,6 @@ footer ul li:hover{
         align-items: center;
         margin-left: 0px;
        /* display: inline-block;  Add */
-        width: 100%;  
         margin: 3em; /* retirei -top da propriedade margin e pus 3em ao inves de 2em */
         flex-wrap: wrap;
         font-size: 15px;
@@ -526,8 +525,7 @@ footer ul li:hover{
     }
 
     .ultimosl-sqr img{
-        width: 300px;
-        height: 300px;
+        max-width: 75%;
         object-fit: cover;
         opacity: 90%;
     }
