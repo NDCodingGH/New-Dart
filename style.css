@@ -517,17 +517,16 @@ footer ul li:hover{
         align-items: center;
         margin-left: 0px;
        /* display: inline-block;  Add */
-       width: 90%; /* Adjust as needed */ /* chatgpt */
-       font-size: 14px; /* Adjust font size for smaller screens */ /* chatgpt */
+        width: 100%;  
         margin: 3em; /* retirei -top da propriedade margin e pus 3em ao inves de 2em */
         flex-wrap: wrap;
+        font-size: 15px;
         text-align: justify;
         text-justify: inter-word;
     }
 
     .ultimosl-sqr img{
-        width: 80%; /* chatgpt*/
-    /*    width: 300px; */
+        width: 300px;
         height: 300px;
         object-fit: cover;
         opacity: 90%;
