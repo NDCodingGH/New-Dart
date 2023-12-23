@@ -21,6 +21,7 @@
     --bgc-contactos-button: #b8b0fd; /*BG Color Contactos Button */
     --bgc-footer: rgba(46, 4, 130, 0.2); /*BG Color Contactos Button */
     --fontc-contactos-button: white;/*Font Color Contactos Button */
+    color-scheme: light only;
                                     
 }
 
@@ -95,7 +96,7 @@ header{
 
 #header-texto h1{
     font-family: 'Edo', 'Montserrat', sans-serif;
-    font-size: 55px;
+    font-size: 70px;
 }
 
 #header-texto h3{
@@ -196,7 +197,7 @@ nav{
 
 
 #sobre-p{
-    max-width: max-content;
+    max-width: fit-content;
     width: 23em;
     font-size: 18px;
     overflow-wrap: normal;
@@ -321,6 +322,7 @@ nav{
 
 .obras-sqr p{
     margin-top: 10px;
+    text-align: center;
     text-decoration: none;
 }  
 
@@ -558,5 +560,10 @@ footer ul li:hover{
     .obras-sqr img{
         width: 250px;
         height: 250px;
+    }
+
+    #header-texto h1{
+        font-family: 'Edo', 'Montserrat', sans-serif;
+        font-size: 50px;
     }
 }
