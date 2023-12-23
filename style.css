@@ -196,7 +196,7 @@ nav{
     max-width: calc(100% - 23em); /* Adjust the width responsively */
     width: auto; /* Ensures the width adjusts according to the content */
     font-size: 18px;
-    padding: 20px;
+    padding: 20em;
     overflow-wrap: normal;
     display: flex;
     flex-wrap: wrap;
