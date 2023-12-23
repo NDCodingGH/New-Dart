@@ -193,10 +193,11 @@ nav{
 
 #sobre-p{
 
-    max-width: calc(100% - 23em); /* Adjust the width responsively */
+    max-width: 100%; /* Adjust the width responsively */
     width: auto; /* Ensures the width adjusts according to the content */
     font-size: 18px;
-    padding: 20em;
+    padding-left: 20em;
+    padding-right: 20em;
     overflow-wrap: normal;
     display: flex;
     flex-wrap: wrap;
