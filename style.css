@@ -496,6 +496,9 @@ footer ul li:hover{
         display: none;
     }
 
+
+    
+
     #sobre-elements{
         display: flex;
         justify-content: center;
@@ -504,7 +507,7 @@ footer ul li:hover{
     }
 
     #sobre-elements img{
-        aspect-ratio: 3/2;
+        /*    aspect-ratio: 3/2; */
         height: 300px;
         width: 200px;
         display: flex;
@@ -513,6 +516,7 @@ footer ul li:hover{
     #sobre-elements p{
         align-items: center;
         margin-left: 0px;
+        display: inline-block; /* Add */
         /* width: 35em;  40px */
         margin: 3em; /* retirei -top da propriedade margin e pus 3em ao inves de 2em */
         flex-wrap: wrap;
