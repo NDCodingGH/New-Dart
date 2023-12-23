@@ -35,6 +35,7 @@ body{
     padding: 0;
     color: var(--fontc-main);
     font-family: 'Marmelad', sans-serif;
+    background-color: rgb(73, 56, 59);
 }
 
 .geral{
