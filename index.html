@@ -18,6 +18,14 @@
   ml('account', '742745');
 </script>
 <!-- End MailerLite Universal -->
+
+<script> 
+        // Check if the URL contains an anchor
+    if (window.location.hash) {
+        // Remove the anchor from the URL without reloading the page
+      history.replaceState({}, document.title, window.location.pathname); }
+</script>
+
 </head>
 <body>
 
