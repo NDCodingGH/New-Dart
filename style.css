@@ -19,7 +19,7 @@
     --bgc-ultimosl: rgb(8.5, 8.5,8.5); /*BG Color Ultimos Lançamentos */
     --bgc-obras: rgb(10, 10, 10); /*BG Color Obras */
     --bgc-contactos-button: #b8b0fd; /*BG Color Contactos Button */
-    --bgc-footer: rgba(46, 4, 130, 0.2); /*BG Color Contactos Button */
+    --bgc-footer: #2e048233; /*BG Color Contactos Button */
     --fontc-contactos-button: white;/*Font Color Contactos Button */
     color-scheme: light only;
                                     
@@ -53,7 +53,7 @@ body{
 
 .geral h1{
     text-transform: uppercase;
-    padding-top: 3rem;
+    text-align: center;
     margin-bottom: 3rem;
     font-size: 40px;
     display: flex;
@@ -335,8 +335,8 @@ nav{
 }
 
 .plataformas-sqr img{
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         object-fit: cover;
 }
 
@@ -428,6 +428,11 @@ nav{
         object-fit: cover;
 }
 
+#contactos h3{
+    margin-top: 20px;
+    text-align: center;
+}
+
 footer{
     background-color: var(--bgc-footer);
     border-radius: 5%;
@@ -468,7 +473,7 @@ footer ul li:hover{
 }
 
 #contactos-form-mailerlite{
-    margin: 50px 0 50px 0;
+    margin: 10px 0 10px 0;
 }
 
 @media (max-width: 961px) {
