@@ -375,6 +375,11 @@ nav{
     width: 200px;
 }
 
+#contactos p{
+    font-size: smaller;
+    text-align: center;
+}
+
 #contactos-form{
     display: flex;
     justify-content: center;
