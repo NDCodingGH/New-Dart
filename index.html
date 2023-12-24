@@ -21,10 +21,10 @@
 
 <!-- F’in sweet Webflow Hacks -->
 <script>
-    
+
      $('.nav-button').click(function(e){ 
     	 $('html, body').animate({
-       scrollTop: $( $.attr(this, 'href') ).offset().top - $('.nav').height()
+       scrollTop: $( $.attr(this, 'href') ).offset().top - $('.navbar').height()
     	 }, 1000);
       return false;
     });
