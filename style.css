@@ -354,7 +354,7 @@ nav{
 }
 
 #obras-elements{
-  padding-top: 20px;
+  padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
@@ -364,11 +364,12 @@ nav{
     gap: 50px;
     overflow: scroll;
     white-space: nowrap;
-    overflow-y: hidden; */
+     */
 
     gap: 30px;
     max-height: 30em;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .obras-sqr img{
