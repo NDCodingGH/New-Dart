@@ -354,17 +354,29 @@ nav{
 }
 
 #obras-elements{
+  padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
+
+   /* display: flex;
+    flex-direction: row;
+    gap: 50px;
+    overflow: scroll;
+    white-space: nowrap;
+    overflow-y: hidden; */
+
     gap: 30px;
+    max-height: 30em;
+    overflow-y: scroll;
 }
 
 .obras-sqr img{
-    width: 400px; /* TBD */
-    height: 400px; /* TBD */
+    width: 300px; /* TBD */
+    height: 300px; /* TBD */
     object-fit: cover;
     opacity: 90%;
+    justify-content: center;
     -webkit-transition: var(--lm-trans-time-out);
     -moz-transition: var(--lm-trans-time-out);
     -o-transition: var(--lm-trans-time-out);
@@ -590,9 +602,9 @@ footer ul li:hover{
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    max-height: 50em;
+    max-height: 20em;
     overflow-y: scroll;
-    border: var(--bgc-lamayor) solid 1px;
+    border: rgb(113, 76, 188) solid 1px;
 }
 
 .beats-sqr img{
@@ -656,6 +668,7 @@ footer ul li:hover{
     max-height: 900px;
    
     white-space: normal;
+    border: rgb(113, 76, 188) solid 1px;
 }
 
 #licencas-elements{
@@ -897,9 +910,20 @@ footer ul li:hover{
         border-radius: 5%;
     }
 
+    #obras-elements{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    overflow: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+    }
+
     .obras-sqr img{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     #header-texto h1{
@@ -915,8 +939,8 @@ footer ul li:hover{
     }
 
     #plataformas-players iframe{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
 
     #licencas-elements{
