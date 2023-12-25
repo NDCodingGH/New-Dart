@@ -12,23 +12,68 @@
 
 
 :root{                                                              /*VARIÁVEIS*/
+
     --bgc: #070707; /*BG Color Geral */
     --fontc-main: white; /*Font Color Geral*/
+    color-scheme: light only;
+    
+    
+
+/* New Dart */
+    
     --bgc-song-cards: white; /*BG Color Song Cards */
     --fontc-song-cards: rgb(7, 7, 7); /*Font Color Song Cards */
+
     --bgc-ultimosl: rgb(8.5, 8.5,8.5); /*BG Color Ultimos Lançamentos */
     --bgc-obras: rgb(10, 10, 10); /*BG Color Obras */
+
     --bgc-contactos-button: #b8b0fd; /*BG Color Contactos Button */
-    --bgc-footer: #2e048233; /*BG Color Contactos Button */
     --fontc-contactos-button: white;/*Font Color Contactos Button */
-    color-scheme: light only;
+
+    --bgc-footer: #2e048233; /*BG Color Contactos Button */
+
+
+/* LaMayor */
+
+    --bgc-lamayor: linear-gradient(to top, rgb(116, 60, 228), rgba(46, 4, 130, 1 )); /*BG LaMayor */
+    --track-scrollbar: #743ce4;
+    --handle-scrollbar: #2e0482;
+    --handle-scrollbar-hover: rgb(24, 0, 71);
+    --lm-trans-time-in: all 100ms ease-in;
+    --lm-trans-time-out: all 500ms ease-out;
+    
                                     
 }
 
 
 body{
     background-color: var(--bgc);
-    overflow-x: hidden;
+
+    ::-webkit-scrollbar{
+    height: 20px;
+    width: 4px;
+    background: gray;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--track-scrollbar); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--handle-scrollbar); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--handle-scrollbar-hover); 
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: #000;
+    border-radius: 10px;
+}
 }
 
 *{
@@ -73,7 +118,7 @@ body{
     z-index: -1;
     object-fit: cover;
     object-position: 50% 40%;
-    opacity: 30%;
+    opacity: 60%;
 
 }
 
@@ -147,8 +192,17 @@ nav{
     padding: 5px;
 }
 
-#capa{
-    margin-bottom: 150px;
+
+.capa{
+    margin-bottom: 50px;
+}
+
+
+    
+
+#capa-lamayor{
+    background: var(--bgc-lamayor);
+
 }
 
 .toggle-button{
@@ -480,6 +534,46 @@ footer ul li:hover{
     margin: 10px 0 10px 0;
 }
 
+/*-----------------------   LaMayor   ------------------------*/
+
+#beats-elements{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    overflow: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding: 30px;
+}
+
+.beats-sqr img{
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    -webkit-transition: var(--lm-trans-time-out);
+   -moz-transition: var(--lm-trans-time-out);
+   -o-transition: var(--lm-trans-time-out);
+   -ms-transition: var(--lm-trans-time-out);
+   transition: var(--lm-trans-time-out);
+
+}
+
+
+.beats-sqr:hover{
+
+    -webkit-transition: var(--lm-trans-time-in);
+    -moz-transition: var(--lm-trans-time-in);
+    -o-transition: var(--lm-trans-time-in);
+    -ms-transition: var(--lm-trans-time-in);
+    transition: var(--lm-trans-time-in);
+    transform: scale(1.1,1.1);
+}
+
+#plataformas-player iframe{
+    width: 300px;
+    height: 300px;
+}
+
 @media (max-width: 961px) {
 
     .geral {
@@ -524,7 +618,9 @@ footer ul li:hover{
     }
 
 
-    
+    .capa{
+        margin-bottom: 100px;
+    }
 
     #sobre-elements{
         display: flex;
