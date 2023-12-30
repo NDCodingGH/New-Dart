@@ -173,8 +173,7 @@ header{
 }
 
 .navbar ul li{
-    background-color: rgba(46, 4, 130, 0.2);
-    margin-right: 10px ;
+    margin: 0 10px 0 0;
     display: flex ;
     justify-content: center ;
     align-items: center ;
@@ -880,6 +879,10 @@ footer ul li:hover{
         width: 100%;
         flex-direction: column;
        
+    }
+
+    .navbar ul li{
+        margin: 0;
     }
 
     .navbar-links.active{
