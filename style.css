@@ -354,22 +354,32 @@ nav{
 }
 
 #obras-elements{
-  padding: 20px;
+ /* padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
 
-   /* display: flex;
+    display: flex;
     flex-direction: row;
     gap: 50px;
     overflow: scroll;
     white-space: nowrap;
-     */
+     
 
     gap: 30px;
     max-height: 30em;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: hidden; */
+
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-height: 20em;
+    overflow-y: scroll;
+    border-bottom: rgb(113, 76, 188) solid 4px;
 }
 
 .obras-sqr img{
@@ -605,7 +615,7 @@ footer ul li:hover{
     gap: 50px;
     max-height: 20em;
     overflow-y: scroll;
-    border: rgb(113, 76, 188) solid 1px;
+    border-bottom: rgb(113, 76, 188) solid 4px;
 }
 
 .beats-sqr img{
@@ -656,20 +666,9 @@ footer ul li:hover{
     height: 70px;
 }
 
+
 #licencas{
-    padding: 70px;
     background-color: var(--bgc-ultimosl);
-
-    
-}
-
-#licencas-wrapper{
-    overflow-y: scroll;
-    overflow-x: hidden;
-    max-height: 900px;
-   
-    white-space: normal;
-    border: rgb(113, 76, 188) solid 1px;
 }
 
 #licencas-elements{
@@ -681,10 +680,19 @@ footer ul li:hover{
     gap: 30px;
 }
 
-.licencas-sqr p{
-    margin-top: 10px;
+#licencas-id{
     text-align: center;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.licencas-sqr p{
+/*    margin-top: 10px; */
+    text-align: center;
+/*    margin-bottom: 30px; */
     font-size: 20px;
     flex-wrap: wrap;
     color: var(--fontc-licencas-titulo);
@@ -697,10 +705,15 @@ footer ul li:hover{
 }
 
 .licencas-sqr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    width: 500px;
+    height: 500px;
     background-color: var(--bgc-licencas-card);
     color: var(--fontc-main);
-    margin-bottom: 1.5rem;
+/*    margin-bottom: 1.5rem; */
 }
 
 .licencas-sqr h2{
@@ -711,7 +724,7 @@ footer ul li:hover{
     flex-direction: row;
     text-align: center;
     align-items: center;
-    margin:0 100px 100px 100px;
+   /* margin:30px 100px 100px 100px; */
     -webkit-transition: var(--lm-trans-time-in);
     -moz-transition: var(--lm-trans-time-in);
     -o-transition: var(--lm-trans-time-in);
@@ -721,13 +734,13 @@ footer ul li:hover{
 }
 
 .licencas-sqr h3{
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     text-align: center;
     align-items: center;
-    margin-bottom: 100px;
+/*    margin-bottom: 100px; */
     text-decoration: overline;
 
     -webkit-transition: var(--lm-trans-time-in);
@@ -744,6 +757,14 @@ footer ul li:hover{
     align-items: center;
     
 }
+
+#licencas-card-premium{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .licencas-sqr h2:hover{
     transform: scale(1.4);
@@ -793,7 +814,16 @@ footer ul li:hover{
 
 
 
-
+/* This style is applied only when JavaScript is disabled */
+.javascript-warning {
+    display: block;
+    background-color: var(--handle-scrollbar);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 10px;
+}
 
 
 
@@ -935,12 +965,18 @@ footer ul li:hover{
         height: 300px;
     }
 
+    #licencas-wrapper{
+        max-height: 500px;
+        overflow-y: scroll;
+        border-bottom: rgb(113, 76, 188) solid 4px;
+    }
     
 
     #licencas-elements{
         margin: 0;
         padding: 0;
-        transform: scale(0.9,0.9);
+        flex-wrap: wrap;
+
     }
 
     .licencas-sqr p{
