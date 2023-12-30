@@ -103,7 +103,7 @@ body{
 .geral h1{
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 50px;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -173,6 +173,7 @@ header{
 }
 
 .navbar ul li{
+    background-color: rgba(46, 4, 130, 0.2);
     margin-right: 10px ;
     display: flex ;
     justify-content: center ;
@@ -350,7 +351,10 @@ nav{
 
 #obras{
     background-color: var(--bgc-obras);
-    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #obras-elements{
@@ -370,24 +374,25 @@ nav{
     max-height: 30em;
     overflow-y: scroll;
     overflow-x: hidden; */
-
-    padding: 50px 0 50px 0;
+    width: calc(100% + 30px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
-    max-height: 20em;
+    text-align: center;
+    gap: 30px;
+    max-height: 25em;
     overflow-y: scroll;
     border-bottom: rgb(113, 76, 188) solid 4px;
 }
 
 .obras-sqr img{
+    display: flex;
     width: 300px; /* TBD */
     height: 300px; /* TBD */
-    object-fit: cover;
     opacity: 90%;
     justify-content: center;
+    margin: 20px;
     -webkit-transition: var(--lm-trans-time-out);
     -moz-transition: var(--lm-trans-time-out);
     -o-transition: var(--lm-trans-time-out);
@@ -767,7 +772,7 @@ footer ul li:hover{
 
 
 .licencas-sqr h2:hover{
-    transform: scale(1.4);
+    transform: scale(1.2);
     cursor: default;
     -webkit-transition: var(--lm-trans-time-out);
     -moz-transition: var(--lm-trans-time-out);
@@ -947,8 +952,13 @@ footer ul li:hover{
     }
 
     .obras-sqr img{
-        width: 100px; /* TBD */
-        height: 100px; /* TBD */
+        width: 150px; /* TBD */
+        height: 150px; /* TBD */
+    }
+
+    .obras-sqr p{
+        font-size: 13px;
+    }
 /* LaMayor */
 
     #plataformas-players{
@@ -978,5 +988,4 @@ footer ul li:hover{
     .licencas-sqr p{
         transform: scale(0.8);
     }
-}
 }
