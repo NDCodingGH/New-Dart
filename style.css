@@ -947,8 +947,8 @@ footer ul li:hover{
     }
 
     .obras-sqr img{
-        width: 200px; /* TBD */
-        height: 200px; /* TBD */
+        width: 100px; /* TBD */
+        height: 100px; /* TBD */
 /* LaMayor */
 
     #plataformas-players{
@@ -978,4 +978,5 @@ footer ul li:hover{
     .licencas-sqr p{
         transform: scale(0.8);
     }
+}
 }
