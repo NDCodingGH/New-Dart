@@ -941,18 +941,14 @@ footer ul li:hover{
         border-radius: 5%;
     }
 
-  
-
-    .obras-sqr img{
-        width: 200px;
-        height: 200px;
-    }
-
     #header-texto h1{
         font-family: 'Edo', 'Montserrat', sans-serif;
         font-size: 50px;
     }
 
+    .obras-sqr img{
+        width: 200px; /* TBD */
+        height: 200px; /* TBD */
 /* LaMayor */
 
     #plataformas-players{
