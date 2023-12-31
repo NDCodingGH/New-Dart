@@ -815,10 +815,6 @@ footer ul li:hover{
     transition: var(--lm-trans-time-out);
 } 
 
-
-
-
-/* This style is applied only when JavaScript is disabled */
 .javascript-warning {
     display: block;
     background-color: var(--handle-scrollbar);
@@ -832,12 +828,60 @@ footer ul li:hover{
 
 
 
+/* ------------- Externo ------------ */
 
+#externo{
+    margin-bottom: 50px;
+}
 
+#externo-elements{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+#externo-elements p{
+    font-size: 20px;
+    width: 50rem;
+    margin-bottom: 50px;
+    text-align: justify;
+    justify-self: center;
+}
 
+#externo-sites ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#externo-sites ul li {
+    background-color: var(--handle-scrollbar);
+    list-style: none;
+    padding: 7px;
+    margin: 20px;
+    border-radius: 20%;
+    -webkit-transition: var(--lm-trans-time-out);
+    -moz-transition: var(--lm-trans-time-out);
+    -o-transition: var(--lm-trans-time-out);
+    -ms-transition: var(--lm-trans-time-out);
+    transition: var(--lm-trans-time-out);
+}
 
+#externo-sites ul li a{
+    text-decoration: none;
+
+}
+
+#externo-sites ul li:hover{
+    transform: scale(1.2);
+    -webkit-transition: var(--lm-trans-time-in);
+    -moz-transition: var(--lm-trans-time-in);
+    -o-transition: var(--lm-trans-time-in);
+    -ms-transition: var(--lm-trans-time-in);
+    transition: var(--lm-trans-time-in);
+}
 
 
 
@@ -991,4 +1035,15 @@ footer ul li:hover{
     .licencas-sqr p{
         transform: scale(0.8);
     }
+
+
+
+
+    /* Externo */
+
+    #externo-elements p{
+        font-size: 16px;
+        width:100%;
+    }
+
 }
