@@ -556,6 +556,17 @@ nav{
     text-align: center;
 }
 
+#contactos-mailerlite-desc{
+    display: flex;
+    gap: 5px;
+}
+
+#contactos-mailerlite-desc p:hover{
+    background-color: var(--fontc-main);
+    color: var(--handle-scrollbar);
+    border-radius: 20%;
+}
+
 footer{
     background-color: var(--bgc-footer);
     border-radius: 5%;
@@ -670,6 +681,11 @@ footer ul li:hover{
     height: 70px;
 }
 
+#plataformas-players p:hover{
+    background-color: var(--fontc-main);
+    color: var(--handle-scrollbar);
+    border-radius: 20%;
+}
 
 #licencas{
     background-color: var(--bgc-ultimosl);
