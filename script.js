@@ -10,3 +10,4 @@ function copyEmailToClipboard(imgElement) {
   navigator.clipboard.writeText(email);
   alert("Email copiado: " + email);
 }
+
