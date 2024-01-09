@@ -36,7 +36,11 @@
 /* LaMayor */
 
     --bgc-lamayor: linear-gradient(to top, rgb(116, 60, 228), rgba(46, 4, 130, 1 )); /*BG LaMayor */
-    
+
+    --bgc-plataformas-consent: rgb(108, 69, 187);
+    --bgc-plfrms-cnsnt-btn: #20015e33;
+    --bgc-plfrms-cnsnt-btn-hover: #5500ff33;
+
     --bgc-licencas-card:rgb(76, 23, 184);   
     --fontc-licencas-titulo:  rgb(175, 135, 254);
 
@@ -46,6 +50,8 @@
 
     --lm-trans-time-in: all 100ms ease-in;
     --lm-trans-time-out: all 300ms ease-out;
+    --lm-btn-trans-time-in: all 50ms ease-in;
+    --lm-btn-trans-time-out: all 100ms ease-out;
                         
 }
 
@@ -681,11 +687,86 @@ footer ul li:hover{
     height: 70px;
 }
 
-#plataformas-players p:hover{
+.plataformas-pp:hover{
     background-color: var(--fontc-main);
     color: var(--handle-scrollbar);
-    border-radius: 20%;
+    border-radius: 10%;
 }
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgc-plataformas-consent);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+.mensagem p, .mensagem a, .mensagem button{
+    font-size: 1.1em;
+    margin: 7px;
+    color: var(--fontc-main);
+    -webkit-transition: var(--lm-btn-trans-time-out);
+    -moz-transition: var(--lm-btn-trans-time-out);
+    -o-transition: var(--lm-btn-trans-time-out);
+    -ms-transition: var(--lm-btn-trans-time-out);
+    transition: var(--lm-btn-trans-time-out);
+}
+
+.mensagem a:hover{
+    background-color: var(--fontc-main);
+    color: var(--handle-scrollbar);
+    border-radius: 10%;
+    transform: scale(1.1);
+    -webkit-transition: var( --lm-btn-trans-time-in);
+    -moz-transition: var( --lm-btn-trans-time-in);
+    -o-transition: var( --lm-btn-trans-time-in);
+    -ms-transition: var( --lm-btn-trans-time-in);
+    transition: var( --lm-btn-trans-time-in);
+}
+
+.mensagem p{
+
+    text-align: center;
+    text-justify: inter-cluster;
+}
+
+.mensagem button{
+    color: var(--fontc-main);
+    background-color: var(--bgc-plfrms-cnsnt-btn);
+    border: 1px white solid;
+    padding: 10px;
+    -webkit-transition: var(--lm-btn-trans-time-out);
+    -moz-transition: var(--lm-btn-trans-time-out);
+    -o-transition: var(--lm-btn-trans-time-out);
+    -ms-transition: var(--lm-btn-trans-time-out);
+    transition: var(--lm-btn-trans-time-out);
+}
+
+.mensagem button:hover{
+    cursor: pointer;
+    color: var(--fontc-main);
+    background-color: var(--bgc-plfrms-cnsnt-btn-hover);
+    border: 1px white solid;
+    border-radius: 5%;
+    padding: 10px;
+    transform: scale(1.03);
+    -webkit-transition: var( --lm-btn-trans-time-in);
+    -moz-transition: var( --lm-btn-trans-time-in);
+    -o-transition: var( --lm-btn-trans-time-in);
+    -ms-transition: var( --lm-btn-trans-time-in);
+    transition: var( --lm-btn-trans-time-in);
+}
+
+/* Ocultar players inicialmente */
+.embed-player {
+    display: none;
+}
+
 
 #licencas{
     background-color: var(--bgc-ultimosl);
