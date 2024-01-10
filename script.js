@@ -1,9 +1,14 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const toggleButton = document.querySelector('.toggle-button');
+const navbarLinks = document.querySelector('.navbar-links');
+const headerText = document.getElementsByClassName('header-texto');
 
 toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
+    navbarLinks.classList.toggle('active');
+    headerText.classList.toggle('hidden');
+});
+
+
+
 
 function copyEmailToClipboard(imgElement) {
   var email = imgElement.getAttribute("data-email");

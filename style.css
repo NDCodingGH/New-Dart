@@ -24,8 +24,9 @@
     --bgc-song-cards: white; /*BG Color Song Cards */
     --fontc-song-cards: rgb(7, 7, 7); /*Font Color Song Cards */
 
-    --bgc-ultimosl: rgb(8.5, 8.5,8.5); /*BG Color Ultimos Lançamentos */
-    --bgc-obras: rgb(10, 10, 10); /*BG Color Obras */
+    --bgc-ultimosl: rgb(216, 216, 216); /*BG Color Ultimos Lançamentos */
+    --bgc-obras: rgb(9, 9, 9); /*BG Color Obras */
+    --bgc-plataformas: rgb(20, 20, 20);
 
     --bgc-contactos-button: #b8b0fd; /*BG Color Contactos Button */
     --fontc-contactos-button: white;/*Font Color Contactos Button */
@@ -37,10 +38,11 @@
 
     --bgc-lamayor: linear-gradient(to top, rgb(116, 60, 228), rgba(46, 4, 130, 1 )); /*BG LaMayor */
 
-    --bgc-plataformas-consent: rgb(108, 69, 187);
+    --bgc-plataformas-consent: rgba(108, 69, 187, 0.5);
     --bgc-plfrms-cnsnt-btn: #20015e33;
     --bgc-plfrms-cnsnt-btn-hover: #5500ff33;
 
+    --bgc-licencas: rgb(10,10,10);
     --bgc-licencas-card:rgb(76, 23, 184);   
     --fontc-licencas-titulo:  rgb(175, 135, 254);
 
@@ -94,7 +96,8 @@ body{
 }
 
 .geral{
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     padding-right: 50px;
     padding-left: 50px;
     border: 0px;
@@ -109,6 +112,7 @@ body{
 .geral h1{
     text-transform: uppercase;
     text-align: center;
+
     margin-bottom: 50px;
     font-size: 40px;
     display: flex;
@@ -121,7 +125,12 @@ body{
     
 }
 
-#header-img{
+.capa{
+            position: relative; 
+            width: 100%;
+}
+
+.header-img{
     height: 400px;
     width: 100%;
     position: absolute;
@@ -140,21 +149,27 @@ header{
     z-index: -1;
 }
 
-#header-texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    font-size: 30px;
+.header-texto.hidden {
+    height: 0; /* Altera a altura para 0 para esconder o header */
 }
 
-#header-texto h1{
+  .header-texto {
+    position: relative; /* Ou absolute, dependendo do layout desejado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    overflow: hidden; /
+}
+
+
+
+.header-texto h1{
     font-family: 'Edo', 'Montserrat', sans-serif;
     font-size: 70px;
 }
 
-#header-texto h3{
+.header-texto h3{
     display: flex;
     justify-content: center;
     font-family: 'Edo', sans-serif;  
@@ -203,9 +218,6 @@ nav{
 }
 
 
-.capa{
-    margin-bottom: 50px;
-}
 
 
     
@@ -216,15 +228,19 @@ nav{
 }
 
 .toggle-button{
-    position: absolute;
-    top: 1.9rem;
-    right: 1rem;
+    position: fixed;
+    top: 1.8rem;
+    right: 0.5rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 3px 5px 3px;
     width: 31px;
     height: 21px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 999;
 }
 
 .toggle-button .bar{
@@ -236,7 +252,9 @@ nav{
 
 .navbar-links{
     display: flex;
+    justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 
@@ -245,7 +263,6 @@ nav{
     height: 70px;
     width: 70px;
 }
-
 
 #sobre-elements img{
     height: 400px;
@@ -272,15 +289,33 @@ nav{
 }
 
 #ultimosl{
-    
-    background-color: var(--bgc-ultimosl);
-}
-
-#ultimosl-elements{
-    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background: url(imgs/BGs/UltimosL.jpg) fixed;
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+
+
+#ultimosl-elements{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+#ultimosl-id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #ultimosl-elements a{
@@ -310,7 +345,7 @@ nav{
     opacity: 90%;
 }
 
-#ultimosl-keukenhof{
+#ultimosl-sqr{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -360,6 +395,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 0;
 }
 
 #obras-elements{
@@ -386,7 +422,7 @@ nav{
     flex-wrap: wrap;
     text-align: center;
     gap: 30px;
-    max-height: 25em;
+    max-height: 40em;
     overflow-y: scroll;
     border-bottom: rgb(113, 76, 188) solid 4px;
 }
@@ -429,12 +465,15 @@ nav{
     text-decoration: none;
 }  
 
+#plataformas{
+    background-color: var(--bgc-plataformas);
+}
+
 .plataformas-elements{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-bottom: 50px;
 }
 
 .plataformas-sqr img{
@@ -769,7 +808,7 @@ footer ul li:hover{
 
 
 #licencas{
-    background-color: var(--bgc-ultimosl);
+    background-color: var(--bgc-licencas);
 }
 
 #licencas-elements{
@@ -932,7 +971,6 @@ footer ul li:hover{
 }
 
 #externo-elements{
-    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -942,7 +980,7 @@ footer ul li:hover{
 #externo-elements p{
     font-size: 20px;
     width: 50rem;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: justify;
     justify-self: center;
 }
@@ -998,16 +1036,22 @@ footer ul li:hover{
         max-width: 100%;
     }
 
+
+
     .toggle-button {
         display: flex;
     }
 
     .navbar-links{
         display: none;
-       
-        width: 100%;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        height: 0;
+
+        transition: var(--lm-trans-time-out);
+        top: 50%;
+        transform:translateY(-30%) translateX(-1%);
+        width: 0;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         border-radius: 5%;
     }
 
@@ -1017,32 +1061,61 @@ footer ul li:hover{
     }
 
     .navbar ul{
-        width: 100%;
+        width: 50%;
         flex-direction: column;
        
     }
 
     .navbar ul li{
+        transition: 50ms ease-out;
+        -moz-transition: 50ms ease-out;
+        -o-transition: 50ms ease-out;
+        -webkit-transition: 50ms ease-out;
+        -ms-transition: 50ms ease-out;
         margin: 0;
+    
+        border-right: 1px white outset;
+        border-left: 1px white outset;
+      
+        border-radius: 4%;
+    }
+
+    .navbar ul li:hover{
+        transition: 50ms ease-in;
+        -moz-transition: 50ms ease-in;
+        -o-transition: 50ms ease-in;
+        -webkit-transition: 50ms ease-in;
+        -ms-transition: 50ms ease-in;
+        background-color: rgba(47, 15, 168,0.3);
+        border-radius: 10%;
     }
 
     .navbar-links.active{
+        position: absolute;
+        transition: var(--lm-trans-time-in);
         display: flex;
-        margin-bottom: 200px;
+        height: fit-content;
+        margin: 0;
+        width:100%;
+        overflow-x: hidden;
+        z-index: 998;
     }
 
     .navbar-links.active a{
         font-size: 1.2rem;
     }
 
-    #header-texto h3{
-        display: none;
+    .header-img{
+        height: 360px;
     }
 
 
-    .capa{
-        margin-bottom: 100px;
+
+    .header-texto h1{
+        font-family: 'Edo', 'Montserrat', sans-serif;
+        font-size: 50px;
     }
+    
 
 /* New Dart */    
 
@@ -1066,11 +1139,16 @@ footer ul li:hover{
         width: auto; /* chatgpt */
         max-width: 90%; /* chatgpt */
        /* display: inline-block;  Add */
-        margin: 3em; /* retirei -top da propriedade margin e pus 3em ao inves de 2em */
+        margin: 3em 3em 0em 3em; /* retirei -top da propriedade margin e pus 3em ao inves de 2em */
         flex-wrap: wrap;
         font-size: 15px;
         text-align: justify;
         text-justify: distribute-all-lines;
+    }
+
+    #ultimosl{
+        background: url(imgs/BGs/UltimosL\ Mobile.jpg) fixed;
+        background-size: 100%;
     }
 
     .ultimosl-sqr img{
@@ -1090,20 +1168,20 @@ footer ul li:hover{
         border-radius: 5%;
     }
 
-    #header-texto h1{
-        font-family: 'Edo', 'Montserrat', sans-serif;
-        font-size: 50px;
-    }
 
     .obras-sqr img{
-        width: 150px; /* TBD */
-        height: 150px; /* TBD */
+        width: 230px; /* TBD */
+        height: 230px; /* TBD */
     }
 
     .obras-sqr p{
-        font-size: 13px;
+        font-size: 16px;
     }
 /* LaMayor */
+
+    #capa-lamayor{
+        height: 320px;
+    }
 
     #plataformas-players{
         flex-direction: column;
@@ -1140,7 +1218,8 @@ footer ul li:hover{
 
     #externo-elements p{
         font-size: 16px;
-        width:100%;
+        width:calc(100% + 150px);
     }
+
 
 }
