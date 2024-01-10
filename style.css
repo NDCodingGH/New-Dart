@@ -15,7 +15,8 @@
 
     --bgc: rgb(7, 7, 7); /*BG Color Geral */
     --fontc-main: white; /*Font Color Geral*/
-    --clr-neon: rgba(73, 39, 164, 0.5);
+    --clr-neon: rgba(73, 39, 164, 0.8);
+    --clr-neon-linktree: rgba(73, 39, 164, 0.8);
     color-scheme: light only;
     
     
@@ -113,7 +114,7 @@ body{
 .geral h1{
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 0 0 0.15em hsl(0 0% 100% /0.5), 0 0 0.15em currentColor; 
+    text-shadow: 0 0 0.10em hsl(0 0% 100% /0.5), 0 0 0.10em currentColor; 
     margin-bottom: 50px;
     font-size: 40px;
     display: flex;
@@ -207,8 +208,25 @@ header{
     
 }
 
-.lamayor-link, .lamayor-link a, .uv-link, .uv-link a {
+
+
+.linktree-link a{
     background-color: white;
+    color:var(--clr-neon-linktree) ;
+}
+
+.lamayor-link a{
+    background-color: white;
+    color: var(--clr-neon);
+}
+
+.uv-link a{
+    background-color:white ;
+    color: var(--clr-neon);
+}
+
+.nd-link a{
+    background-color:white ;
     color: var(--clr-neon);
 }
 
@@ -627,7 +645,7 @@ nav{
     gap: 5px;
 }
 
-#contactos-mailerlite-desc p:hover{
+.contactos-mailerlite-desc-link:hover, .contactos-mailerlite-desc-link:hover {
     background-color: var(--fontc-main);
     color: var(--handle-scrollbar);
     border-radius: 20%;
@@ -707,6 +725,7 @@ footer ul li:hover{
     max-height: 20em;
     overflow-y: scroll;
     border-bottom: rgb(113, 76, 188) solid 4px;
+
 }
 
 .beats-sqr img{
@@ -1102,7 +1121,7 @@ footer ul li:hover{
         -o-transition: 50ms ease-out;
         -webkit-transition: 50ms ease-out;
         -ms-transition: 50ms ease-out;
-        margin: 5px;
+        margin: 8px;
         
         border-right: var(--clr-neon) 0.150em solid;
             border-bottom: var(--clr-neon) 0.150em solid;
@@ -1129,7 +1148,7 @@ footer ul li:hover{
         position: absolute;
         transition: var(--lm-trans-time-in);
         display: flex;
-        height: fit-content;
+        height: max-content;
         margin: 0;
         width:100%;
         overflow-x: hidden;
@@ -1137,7 +1156,7 @@ footer ul li:hover{
     }
 
     .navbar-links.active a{
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 
     .header-img{
