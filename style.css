@@ -13,8 +13,9 @@
 
 :root{                                                              /*VARIÁVEIS*/
 
-    --bgc: #070707; /*BG Color Geral */
+    --bgc: rgb(7, 7, 7); /*BG Color Geral */
     --fontc-main: white; /*Font Color Geral*/
+    --clr-neon: rgba(73, 39, 164, 0.5);
     color-scheme: light only;
     
     
@@ -96,7 +97,7 @@ body{
 }
 
 .geral{
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 100px;
     padding-right: 50px;
     padding-left: 50px;
@@ -112,7 +113,7 @@ body{
 .geral h1{
     text-transform: uppercase;
     text-align: center;
-
+    text-shadow: 0 0 0.15em hsl(0 0% 100% /0.5), 0 0 0.15em currentColor; 
     margin-bottom: 50px;
     font-size: 40px;
     display: flex;
@@ -194,16 +195,35 @@ header{
 }
 
 .navbar ul li{
+    text-decoration: none;
+    color: var(--clr-neon);
+
+    text-shadow: 0 0 0.20em hsl(0 0% 100% /0.3), 0 0 0.20em currentColor; 
+    
     margin: 0 10px 0 0;
     display: flex ;
     justify-content: center ;
     align-items: center ;
+    
+}
+
+.lamayor-link, .lamayor-link a, .uv-link, .uv-link a {
+    background-color: white;
+    color: var(--clr-neon);
+}
+
+.navbar ul li a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transition: 150ms;
 }
 
 .navbar ul li a:hover{
     transition: 150ms;
-    background-color: rgba(47, 15, 168,0.3);
-    border-radius: 10%;
+    background-color: #F4EFFA;    ;
+    color: var(--clr-neon);
+    text-shadow: 0 0 0.25em hsl(0 0% 100% /1), 0 0 0.25em currentColor; 
 }
 
 nav{
@@ -415,7 +435,7 @@ nav{
     max-height: 30em;
     overflow-y: scroll;
     overflow-x: hidden; */
-    width: calc(100% + 30px);
+    width: 90% ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,6 +445,7 @@ nav{
     max-height: 40em;
     overflow-y: scroll;
     border-bottom: rgb(113, 76, 188) solid 4px;
+    margin-bottom: 100px;
 }
 
 .obras-sqr img{
@@ -613,13 +634,14 @@ nav{
 }
 
 footer{
-    background-color: var(--bgc-footer);
-    border-radius: 5%;
+    padding: 25px;
+    background: linear-gradient(to bottom, rgb(7, 7, 7) 40%, rgb(43, 0, 130));
+   /* border-radius: 5%; */
 }
 
 .footer-sqr{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 
 footer ul{
@@ -641,12 +663,21 @@ footer a{
 }
 
 footer ul li{
+    transition: 80ms ease-out;
+    -o-transition: 80ms ease-out;
+    -webkit-transition: 80ms ease-out;
+    -moz-transition: 80ms ease-out;
+    -ms-transition: 80ms ease-out;
     margin: 10px;
     margin-top: 10;
 }
 
 footer ul li:hover{
-    transition: 80ms;
+    transition: 80ms ease-in;
+    -o-transition: 80ms ease-in;
+    -webkit-transition: 80ms ease-in;
+    -moz-transition: 80ms ease-in;
+    -ms-transition: 80ms ease-in;
     background-color: #b8b0fd;
     border-radius: 5%;
 }
@@ -1045,14 +1076,13 @@ footer ul li:hover{
     .navbar-links{
         display: none;
         height: 0;
-
         transition: var(--lm-trans-time-out);
         top: 50%;
-        transform:translateY(-30%) translateX(-1%);
+        transform:translateY(-48%) translateX(-1%);
         width: 0;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        border-radius: 5%;
+
     }
 
     .navbar{
@@ -1072,12 +1102,17 @@ footer ul li:hover{
         -o-transition: 50ms ease-out;
         -webkit-transition: 50ms ease-out;
         -ms-transition: 50ms ease-out;
-        margin: 0;
-    
-        border-right: 1px white outset;
-        border-left: 1px white outset;
+        margin: 5px;
+        
+        border-right: var(--clr-neon) 0.150em solid;
+            border-bottom: var(--clr-neon) 0.150em solid;
+
+        border-radius: 0.05em;
+
+        box-shadow: outset 0 0 1em 0 var(--clr-neon), 0 0 1em 0 var(--clr-neon);
       
-        border-radius: 4%;
+        border-radius: 5%;
+        overflow: hidden;
     }
 
     .navbar ul li:hover{
@@ -1086,8 +1121,8 @@ footer ul li:hover{
         -o-transition: 50ms ease-in;
         -webkit-transition: 50ms ease-in;
         -ms-transition: 50ms ease-in;
-        background-color: rgba(47, 15, 168,0.3);
-        border-radius: 10%;
+        background-color: rgba(13, 4, 43, 0.3);
+        
     }
 
     .navbar-links.active{
@@ -1102,7 +1137,7 @@ footer ul li:hover{
     }
 
     .navbar-links.active a{
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 
     .header-img{
