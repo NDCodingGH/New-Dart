@@ -880,8 +880,8 @@ footer ul li:hover{
 
 .mensagem p{
 
-    text-align: center;
-    text-justify: inter-cluster;
+    text-align: justify;
+    text-justify: newspaper;
 }
 
 .mensagem button{
@@ -1177,7 +1177,7 @@ footer ul li:hover{
     .navbar ul{
         width: 50%;
         flex-direction: column;
-        padding: 100px;
+        padding: 50px;
 
     }
 
@@ -1223,7 +1223,7 @@ footer ul li:hover{
     }
 
     .navbar-links.active a{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .header-img{
