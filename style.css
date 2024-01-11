@@ -9,14 +9,12 @@
     src: local('Edo'), url('/fonts/edo.woff') format('woff');
     }
 
-
-
 :root{                                                              /*VARIÁVEIS*/
 
     --bgc: rgb(7, 7, 7); /*BG Color Geral */
     --fontc-main: white; /*Font Color Geral*/
-    --clr-neon: rgba(73, 39, 164, 0.8);
-    --clr-neon-linktree: rgba(73, 39, 164, 0.8);
+    --clr-neon: rgba(73, 39, 164, 1);
+    --clr-neon-linktree: rgba(73, 39, 164, 1);
     color-scheme: light only;
     
     
@@ -40,7 +38,7 @@
 
     --bgc-lamayor: linear-gradient(to top, rgb(116, 60, 228), rgba(46, 4, 130, 1 )); /*BG LaMayor */
 
-    --bgc-plataformas-consent: rgba(108, 69, 187, 0.5);
+    --bgc-plataformas-consent: rgb(86, 40, 213);
     --bgc-plfrms-cnsnt-btn: #20015e33;
     --bgc-plfrms-cnsnt-btn-hover: #5500ff33;
 
@@ -58,7 +56,11 @@
     --lm-btn-trans-time-out: all 100ms ease-out;
                         
 }
-
+@media print {
+    @page {
+      margin: 0;
+    }
+  }
 
 body{
     background-color: var(--bgc);
@@ -541,6 +543,57 @@ nav{
     opacity: 100%;
 }
 
+.servicos-sqr-logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.servicos-sqr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-transition: var(--lm-trans-time-out);
+    -moz-transition: var(--lm-trans-time-out);
+    -o-transition: var(--lm-trans-time-out);
+    -ms-transition: var(--lm-trans-time-out);
+    transition: var(--lm-trans-time-out);
+}
+
+.servicos-sqr p{
+    font-size: 20px;
+}
+
+.servicos-sqr-img{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    -webkit-transition: var(--lm-trans-time-out);
+    -moz-transition: var(--lm-trans-time-out);
+    -o-transition: var(--lm-trans-time-out);
+    -ms-transition: var(--lm-trans-time-out);
+    transition: var(--lm-trans-time-out);
+}
+
+.servicos-sqr:hover{
+    transform: scale(1.08, 1.08);
+
+    -webkit-transition: var(--lm-trans-time-in);
+    -moz-transition: var(--lm-trans-time-in);
+    -o-transition: var(--lm-trans-time-in);
+    -ms-transition: var(--lm-trans-time-in);
+    transition: var(--lm-trans-time-in);
+}
+
+#servicos-elements{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 70px;
+
+}
+
 #contactos{
     display: flex;
     flex-direction: column;
@@ -651,6 +704,10 @@ nav{
     border-radius: 20%;
 }
 
+
+
+
+
 footer{
     padding: 25px;
     background: linear-gradient(to bottom, rgb(7, 7, 7) 40%, rgb(43, 0, 130));
@@ -706,7 +763,10 @@ footer ul li:hover{
 
 /*-----------------------   LaMayor   ------------------------*/
 
-
+.lamayor-body h2{
+    font-size: 35px;
+    text-shadow: 0 0 0.10em hsl(0 0% 100% /0.3), 0 0 0.10em currentColor; 
+}
 
 #beats-elements{
     /* display: flex;
@@ -1016,16 +1076,21 @@ footer ul li:hover{
 
 /* ------------- Externo ------------ */
 
-#externo{
-    margin-bottom: 50px;
-}
 
 #externo-elements{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: 0px;
 }
+
+#externo-elements h1{
+    padding-bottom: 0;
+}
+
 
 #externo-elements p{
     font-size: 20px;
@@ -1045,7 +1110,7 @@ footer ul li:hover{
     background-color: var(--handle-scrollbar);
     list-style: none;
     padding: 7px;
-    margin: 20px;
+    margin-right: 20px;
     border-radius: 20%;
     -webkit-transition: var(--lm-trans-time-out);
     -moz-transition: var(--lm-trans-time-out);
@@ -1097,7 +1162,7 @@ footer ul li:hover{
         height: 0;
         transition: var(--lm-trans-time-out);
         top: 50%;
-        transform:translateY(-48%) translateX(-1%);
+        transform:translateY(-48%) translateX(-1.1%);
         width: 0;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
@@ -1112,7 +1177,8 @@ footer ul li:hover{
     .navbar ul{
         width: 50%;
         flex-direction: column;
-       
+        padding: 100px;
+
     }
 
     .navbar ul li{
@@ -1121,8 +1187,9 @@ footer ul li:hover{
         -o-transition: 50ms ease-out;
         -webkit-transition: 50ms ease-out;
         -ms-transition: 50ms ease-out;
-        margin: 8px;
         
+
+        margin: 2px;
         border-right: var(--clr-neon) 0.150em solid;
             border-bottom: var(--clr-neon) 0.150em solid;
 
@@ -1224,14 +1291,23 @@ footer ul li:hover{
 
 
     .obras-sqr img{
-        width: 230px; /* TBD */
-        height: 230px; /* TBD */
+        width: 200px; /* TBD */
+        height: 200px; /* TBD */
     }
 
     .obras-sqr p{
         font-size: 16px;
     }
+
+    .servicos-sqr-img{
+        width: 300px;
+        height: 300px;
+
+    }
+
 /* LaMayor */
+
+  
 
     #capa-lamayor{
         height: 320px;

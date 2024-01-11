@@ -28,4 +28,3 @@ function carregarElementoExterno(event) {
 document.querySelectorAll('.btnAceitar').forEach(btn => {
   btn.addEventListener('click', carregarElementoExterno);
 });
-
