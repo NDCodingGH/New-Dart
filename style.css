@@ -342,7 +342,7 @@ nav{
 
 
 #ultimosl-elements{
-    width: 100%;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,7 +372,8 @@ nav{
 }
 
 .ultimosl-sqr{
-
+    padding: 1rem; /* TBD */
+    padding-bottom: 0.1rem;
     background-color: var(--bgc-song-cards);
     margin-bottom: 1.5rem;
 }
@@ -382,11 +383,6 @@ nav{
     height: 500px; /* TBD */
     object-fit: cover;
     opacity: 90%;
-}
-
-.ultimosl-sqr video{
-    width: 100%; /* TBD */
-
 }
 
 #ultimosl-sqr{
@@ -1281,10 +1277,6 @@ footer ul li:hover{
         height: 300px;
         object-fit: cover;
         opacity: 90%;
-    }
-
-    #ultimosl-elements{
-        width: calc(100% + 100px);
     }
 
     #ultimosl-logo{
