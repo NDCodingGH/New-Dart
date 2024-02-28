@@ -342,7 +342,7 @@ nav{
 
 
 #ultimosl-elements{
-    width: fit-content;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,8 +372,7 @@ nav{
 }
 
 .ultimosl-sqr{
-    padding: 1rem; /* TBD */
-    padding-bottom: 0.1rem;
+
     background-color: var(--bgc-song-cards);
     margin-bottom: 1.5rem;
 }
@@ -1282,6 +1281,10 @@ footer ul li:hover{
         height: 300px;
         object-fit: cover;
         opacity: 90%;
+    }
+
+    #ultimosl-elements{
+        width: calc(100% + 100px);
     }
 
     #ultimosl-logo{
