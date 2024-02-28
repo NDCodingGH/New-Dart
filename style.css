@@ -385,6 +385,11 @@ nav{
     opacity: 90%;
 }
 
+.ultimosl-sqr video{
+    width: 100%; /* TBD */
+
+}
+
 #ultimosl-sqr{
     display: flex;
     flex-direction: column;
