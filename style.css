@@ -333,7 +333,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(imgs/BGs/UltimosL.jpg) fixed;
+    background: url(https://i.ibb.co/rGTnGWh/UltimosL.jpg) fixed;
     background-size: 100%;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -1268,7 +1268,7 @@ footer ul li:hover{
     }
 
     #ultimosl{
-        background: url(imgs/BGs/UltimosL\ Mobile.jpg) fixed;
+        background: url(https://i.ibb.co/rbv8t2S/Ultimos-L-Mobile.jpg) fixed;
         background-size: 100%;
     }
 
