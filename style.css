@@ -333,16 +333,17 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(https://i.ibb.co/rGTnGWh/UltimosL.jpg) fixed;
+    background: url(imgs/BGs/UltimosL.jpg) fixed;
     background-size: 100%;
     background-position-x: center;
     background-repeat: no-repeat;
+    padding-top: 0; /*temp trailer*/
 }
 
 
 
 #ultimosl-elements{
-    width: fit-content;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,8 +373,7 @@ nav{
 }
 
 .ultimosl-sqr{
-    padding: 1rem; /* TBD */
-    padding-bottom: 0.1rem;
+
     background-color: var(--bgc-song-cards);
     margin-bottom: 1.5rem;
 }
@@ -383,6 +383,11 @@ nav{
     height: 500px; /* TBD */
     object-fit: cover;
     opacity: 90%;
+}
+
+.ultimosl-sqr video{
+    margin-top:30px;
+    width: 80%; /* TBD */
 }
 
 #ultimosl-sqr{
@@ -1134,9 +1139,106 @@ footer ul li:hover{
 }
 
 
+/* ----------ASTRAQ---------- */
+
+#astraq h1 {
+    margin-bottom: 30px;
+}
+
+.astraq-eps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 200px; 
+}
+
+.astraq-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#astraq-desc{
+    width: 50%;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#astraq-logo{
+    width: 100px;
+    height: auto;
+}
+.astraq-eps img {
+    width: 300px;
+    height: auto;
+    opacity: 0.2;
+    transition: --lm-trans-time-in;
+}
+
+.astraq-eps img:hover{
+    transform: scale(1.05);
+    transition: --lm-trans-time-out;
+}
+
+#astraq-ep0 img{
+    opacity: 0.7;
+
+    
+}
+
+#astraq-ep0 img:hover{
+   
+    opacity: 1;
+}
 
 
+.astraq-eps p {
+    margin-top: 10px;
+    text-align: center; 
+    width: 100%; 
+ 
+}
 
+.astraq-eps-wrappers{
+    gap: 50px;
+}
+
+#astraq-elements-eps {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+
+#astraq-ep0-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#astraq-ep123-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+#astraq-ep45-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+#astraq-ep6-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 
 
@@ -1268,7 +1370,7 @@ footer ul li:hover{
     }
 
     #ultimosl{
-        background: url(https://i.ibb.co/rbv8t2S/Ultimos-L-Mobile.jpg) fixed;
+        background: url(imgs/BGs/UltimosL\ Mobile.jpg) fixed;
         background-size: 100%;
     }
 
@@ -1277,6 +1379,10 @@ footer ul li:hover{
         height: 300px;
         object-fit: cover;
         opacity: 90%;
+    }
+
+    #ultimosl-elements{
+        width: calc(100% + 100px);
     }
 
     #ultimosl-logo{
@@ -1349,6 +1455,59 @@ footer ul li:hover{
     #externo-elements p{
         font-size: 16px;
         width:calc(100% + 150px);
+    }
+
+
+
+    #astraq-desc{
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    #astraq-elements-eps {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    /* Mantendo Ep0 e Ep6 maiores */
+    #astraq-ep0-wrapper, #astraq-ep6-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Wrapper123 e Wrapper45 devem ter o mesmo tamanho */
+    #astraq-ep123-wrapper, #astraq-ep45-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 10px;
+    }
+
+    /* Ajustando o tamanho dos episódios para mobile */
+    .astraq-eps {
+        width: calc(33.33% - 20px); /* Episódios em filas com 3 elementos ocupam 1/3 da tela */
+        max-width: 150px; /* Limite máximo de largura */
+        flex: 1;
+        margin: 10px;
+    }
+
+    .astraq-eps img{
+        opacity: 0.4;
+    }
+
+    /* Ajuste para os episódios em filas de 2 elementos (Wrapper45) */
+    #astraq-ep45-wrapper img,  #astraq-ep123-wrapper img {
+        width: 110px; /* Cada episódio ocupa metade da largura da tela */
+    }
+
+    /* Episódios individuais devem ser maiores */
+    #astraq-ep0-wrapper img, #astraq-ep6-wrapper img {
+        width: 150px; /* Ocupa 100% da largura da tela */
+        max-width: 300px; /* Limite máximo para que não se expanda muito */
     }
 
 
