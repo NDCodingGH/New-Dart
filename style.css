@@ -385,10 +385,10 @@ nav{
     opacity: 90%;
 }
 
- .ultimosl-sqr video{ 
+/* .ultimosl-sqr video{ 
     margin-top:30px; 
-    width: 100%; 
-} 
+    width: 80%; 
+} */
 
 #ultimosl-sqr{
     display: flex;
