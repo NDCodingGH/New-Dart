@@ -121,7 +121,7 @@ body{
     font-size: 40px;
     display: flex;
     justify-content: center;
-    border-radius: 2%;    
+    border-radius: 2%;  
 }
 
 .geral p{
@@ -333,7 +333,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(https://i.ibb.co/zZspxTK/newdart-pt-ultimosl-DESKTOP.png) fixed;
+    background: url(https://i.ibb.co/r23pFVQ4/newdart-pt-ultimosl-DESKTOP.png) fixed;
     background-size: 100%;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -1396,7 +1396,7 @@ footer ul li:hover{
     }
 
     #ultimosl{
-        background: url(https://i.ibb.co/5xH1YWX/newdart-pt-ultimosl-MOBILE.png) fixed;
+        background: url(https://i.ibb.co/v4SyLgGr/newdart-pt-ultimosl-MOBILE.png) fixed;
         background-size: 100%;
     }
 
